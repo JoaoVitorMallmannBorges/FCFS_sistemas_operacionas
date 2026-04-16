@@ -85,9 +85,15 @@ while flag:
         opcao = input('Os parâmetros serão aleatórios? (S/N): ').upper()
 
         if opcao == 'S':
+            
+            lista_processos.clear()
             for x in range(total_processos):
                 lista_processos.append(cria_processo_aleatorio())
-        else:
+
+       
+        elif opcao == 'N':
+
+            lista_processos.clear()
             print("Insira os dados manualmente:")
             for i in range(total_processos):
                 print(f"\nDados do Processo {i}:")
